@@ -41,3 +41,31 @@ E.g.
 Or from the sharem_cli directory:
 
 `py main.py -r32 shellcode.bin`
+
+## Problems Installing SHAREM
+
+The command in the bat file is as follows:
+
+`start python -m pip install -e ./sharem/`
+
+If you have multiple versions of python, you may need to adjust the version of Python. E.g. some may have python for 2.74 and py for newer versions.
+
+One scenario could be where someone has Python for 2.74, and Py for more modern Python. In that case, we would change the command in the .bat to the following:
+
+`start py -m pip install -e ./sharem/`
+
+If you want to ensure the SHAREM package is installed correctly, you may enter
+
+`py -m pip list`
+
+You should see SHAREM listed among the packages, and in the location column, there should be the file location where you installed it.
+
+E.g. `sharem 0.0.1 c:\sharem\github\sharem\sharem`
+
+This should be done automatically via the install.bat file.
+
+If it does not, you can try a variation on this command. In the root of the project (<path>/sharem) in a terminal run the command:
+
+`python -m pip install -e .`  
+	
+_We are available for help, although we are doubtful there are any in a Windows environment, as we have tested this on fresh installs of Windows._
