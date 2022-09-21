@@ -29,6 +29,8 @@ Alternatively, from the main directory, you can run it with
 
 The initial set up should be ran by launching SHAREM. It will launch a process to begin setting up the emulation, and it will provide a message indicating this as well. Once complete, enter z (may need to restart the program). If it hangs up on setting up the emulation, this process may need to be repeated. Once completed, it will begin by saying Emulating x86_32 shellcode.
 
+![setupEmulation](https://user-images.githubusercontent.com/114108866/191625501-46a00c77-f91c-408b-9d97-df57501ab1e7.png)
+
 Ideally, this should be set up on a modern Windows 10 system with Python installed – older versions of Windows 7 potentially could be temperamental, although it does work on some we tested. A modern Windows 10 should present no problems.
 
 To run the program, please provide a shellcode .bin or .txt (ASCII of shellcode binary) as input, using the -r switch
