@@ -1,3 +1,0 @@
-## Shellcode Files
-
-Analysis of “raw” shellcode files is also available and works similarly to PE files. Analysis of shellcode is the focal point of SHAREM. SHAREM accepts both true binary data and text files containing ASCII representations of opcodes such as the following:
