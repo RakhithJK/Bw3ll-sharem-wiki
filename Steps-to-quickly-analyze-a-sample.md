@@ -17,7 +17,7 @@ _Note:_ this is the only Windows ssdeep -- other ways of installing SSDeep are f
 
 ## When You Run the Emulation for the First Time
 
-1. SHAREM will go and acquire DLLs from the Syswow64 directory. It will expand them slightly, each one according to what is in the pe file, so that they are similar to how they would be in memory. It will also map functions to addresses contained in those DLLs. This initial setup will be performed once, and it will take several minutes. If it hangs up after more than several minutes, hit enter. After it is done, this step need not be completed ever again. This step will run automatically if required – no special actions are required, other than to go into the emulation menu (l) and type z.
+SHAREM will go and acquire DLLs from the Syswow64 directory. It will expand them slightly, each one according to what is in the pe file, so that they are similar to how they would be in memory. It will also map functions to addresses contained in those DLLs. This initial setup will be performed once, and it will take several minutes. If it hangs up after more than several minutes, hit enter. After it is done, this step need not be completed ever again. This step will run automatically if required – no special actions are required, other than to go into the emulation menu (l) and type z.
 
 In order to set up the emulation, navigate inside the sharem_cli directory. Shellcode.bin is any shellcode.
 
@@ -26,9 +26,6 @@ In order to set up the emulation, navigate inside the sharem_cli directory. Shel
 Alternatively, from the main directory, you can run it with 
 
 `py sharemMain.py -r32 shellcode.bin`
-
-One sample shellcode.bin is supplied for initial testing. Others are available in the shellcodes Gdrive. [Google Drive Link](https://drive.google.com/drive/folders/1E36ZOAaKFSeromzXd7zTq5fdGC36lg_N?usp=sharing)
-Password is **SHAREM**. These shellcodes walk the PEB and discovering API addresses of functions and then calls those.
 
 The initial set up should be ran by launching SHAREM. It will launch a process to begin setting up the emulation, and it will provide a message indicating this as well. Once complete, enter z (may need to restart the program). If it hangs up on setting up the emulation, this process may need to be repeated. Once completed, it will begin by saying Emulating x86_32 shellcode.
 
