@@ -4,14 +4,14 @@ The setup instructions should be followed. These are reproduced here, but this w
 At a high-level, what we are doing is installing a package locally. The steps below should be followed closely.
 
 To run this, it must be on a Windows machine.
-All OS's are supported, but for ease of use to demo it, Windows is recommended (more detailed instructions are needed for other OS's). 
+All OSs are supported, but for ease of use to demo it, Windows is recommended (more detailed instructions are needed for other OSs). 
 
 _Note: SHAREM will extract Windows DLLs, inflate them by a set amount as specified by PE file, and save them into a special directory, allowing these to be loaded into the emulation. For other OSs, these would need to be imported – but in an “inflated” state._
 
 ## Install setups
-1.	Obtain the SHAREM code from the Google drive
-2.	From the \sharem directory, run install.bat
-3.	Next,  an ssdeep wrapper for Windows must be installed. Go to https://github.com/MacDue/ssdeep-windows-32_64 and follow the instructions in the readme for ssdeep after downloading the code for this Windows version of ssdeep.
+1. Obtain the SHAREM code from the Google drive
+2. From the \sharem directory, run install.bat
+3. Next,  an ssdeep wrapper for Windows must be installed. Go to https://github.com/MacDue/ssdeep-windows-32_64 and follow the instructions in the readme for ssdeep after downloading the code for this Windows version of ssdeep.
 
 _Note:_ this is the only Windows ssdeep -- other ways of installing ssdeep are for Linux -- and this step must be completed in order for the framework to work, as ssdeep is required, and this one dependency causes issues with the install script.
 
@@ -32,8 +32,8 @@ The initial set up should be ran by launching SHAREM. It will launch a process t
 Ideally, this should be set up on a modern Windows 10 system with Python installed – older versions of Windows 7 potentially could be temperamental, although it does work on some we tested. A modern Windows 10 should present no problems.
 
 To run the program, please provide a shellcode .bin or .txt (ASCII of shellcode binary) as input, using the -r switch
-E.g.
 
+E.g.
 `py sharemMain.py -r32 shellcode.bin`
 
 Or from the sharem_cli directory:
