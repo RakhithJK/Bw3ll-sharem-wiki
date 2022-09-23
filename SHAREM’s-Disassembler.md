@@ -1,1 +1,7 @@
 SHAREM can also generate other useful data about a sample. From the main menu, the _D_ option can be used to generate annotated disassembly of a shellcode file. This optional allows the user to easily look through the code and identify where significant malicious actions occur, such as PEB walking sequences.
+
+![image16](https://user-images.githubusercontent.com/114108866/192051783-bfad86c0-ff12-41f5-a2ff-ac86ccdd4ef2.png)
+
+Options regarding the disassembly feature can be found in option accessible by typing _d_ at the main menu.
+
+The disassembly engine is done with several custom analysis functions, and it is done through static analysis. It is significantly more accurate at analyzing shellcode than all other disassemblers. However, it is recommended to run the disassembler only after having emulated the shellcode. The reason why is that API’s that are identified can then be identified in the disassembly. Additionally, SHAREM will combine the results of the emulation to improve the static analysis. When the emulation is run with code coverage, the results can be nearly flawless. Note that when emulated, the results of emulation are prioritized and “override” any differences (if any) from static analysis, but it is done byte by byte. 
