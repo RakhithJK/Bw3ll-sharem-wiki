@@ -1,0 +1,1 @@
+SHAREM can also generate other useful data about a sample. From the main menu, the _D_ option can be used to generate annotated disassembly of a shellcode file. This optional allows the user to easily look through the code and identify where significant malicious actions occur, such as PEB walking sequences.
